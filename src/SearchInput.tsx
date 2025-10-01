@@ -9,7 +9,7 @@ export const SearchInput = () => {
       if (inputRef.current) {
         inputRef.current.focus();
       }
-    }, 500);
+    }, 0);
 
     return () => clearTimeout(timer);
   }, []);
