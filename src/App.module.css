@@ -1,7 +1,6 @@
 .sheetWrapper {
   border-radius: 0;
   height: 100dvh;
-  height: -webkit-fill-available;
 }
 .sheetHead {
   z-index: 3;
