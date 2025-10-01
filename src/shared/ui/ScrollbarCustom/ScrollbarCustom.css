@@ -1,0 +1,47 @@
+.scrollbar {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -webkit-appearance: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+
+  .ms-track.ms-y {
+    width: 10px;
+    background: 0 0;
+    opacity: 1;
+  }
+
+  .ms-track.ms-y .ms-thumb {
+    background: #000;
+    width: 4px;
+
+    transition: background 0.2s;
+
+    &::after {
+      width: 8px;
+    }
+  }
+
+  .ms-track.ms-active,
+  .ms-track:hover {
+    border-color: transparent;
+    opacity: 1;
+  }
+
+  .ms-track.ms-y.ms-active .ms-thumb,
+  .ms-track.ms-y:hover .ms-thumb {
+    background: none;
+    width: 4px;
+  }
+}
+
+.scrollbar-full-width {
+  width: 100%;
+}

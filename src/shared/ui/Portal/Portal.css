@@ -1,0 +1,11 @@
+
+.portal {
+  z-index: 1050;
+  position: relative;
+}
+.Portal-modal {
+  .ms-container > .ms-track-box {
+    position: fixed;
+    right: 0;
+  }
+}

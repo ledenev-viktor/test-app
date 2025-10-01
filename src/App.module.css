@@ -1,0 +1,35 @@
+.sheetWrapper {
+  height: 100dvh;
+  border-radius: 0;
+}
+.sheetHead {
+  z-index: 3;
+}
+
+.overscrollBehaviorOff {
+  overscroll-behavior: none;
+}
+
+.input {
+  padding: 20px 24px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.content {
+  padding: 20px 24px;
+}
+
+.container {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}

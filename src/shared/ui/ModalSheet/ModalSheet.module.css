@@ -1,0 +1,40 @@
+.sheetOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.sheetWrapper {
+  width: 100%;
+  max-width: 767px;
+
+  /* :global {
+    .ms-container > .ms-track-box {
+      position: sticky;
+    }
+  } */
+}
+
+.ms-container > .ms-track-box {
+  position: sticky;
+}
+
+.sheetWrapperContent {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 32px 32px 0 0;
+}
+
+.minSwipeable {
+  min-height: 32px;
+}
+
+.sheetOpen {
+  overflow: hidden !important;
+  padding-right: 0 !important;
+}
