@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import s from "./App.module.css";
 import { ModalSheet } from "./shared/ui";
 import cn from "classnames";
@@ -18,7 +18,9 @@ function App() {
           swipeHead: cn(s.sheetHead),
         }}
         closeFactor={0.2}
-        header={<input placeholder="Тестовый инпут" className={s.input} />}
+        header={
+          <input placeholder="Тестовый инпут" className={s.input} autoFocus />
+        }
         id="searchEmployeeSheet"
         isOpened={open}
         onClose={() => setOpen(false)}
