@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useState } from "react";
 import s from "./App.module.css";
 import { ModalSheet } from "./shared/ui";
 import cn from "classnames";
