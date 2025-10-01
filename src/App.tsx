@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className={s.container}>
-      <button onClick={() => setOpen(true)}>
+      <button className={s.button} onClick={() => setOpen(true)}>
         <Loupe />
       </button>
       <ModalSheet

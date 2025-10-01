@@ -1,6 +1,7 @@
 .sheetWrapper {
-  height: 100dvh;
   border-radius: 0;
+  height: 100dvh;
+  height: -webkit-fill-available;
 }
 .sheetHead {
   z-index: 3;
@@ -32,4 +33,15 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+}
+
+.button {
+  width: 67px;
+  height: 67px;
+  border: none;
+  background: none;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 50%;
 }
