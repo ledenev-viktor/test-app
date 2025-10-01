@@ -3,6 +3,7 @@ import s from "./App.module.css";
 import { ModalSheet } from "./shared/ui";
 import cn from "classnames";
 import Loupe from "./shared/icons/loupe.svg";
+import { SearchInput } from "./SearchInput";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -18,9 +19,7 @@ function App() {
           swipeHead: cn(s.sheetHead),
         }}
         closeFactor={0.2}
-        header={
-          <input placeholder="Тестовый инпут" className={s.input} autoFocus />
-        }
+        header={<SearchInput />}
         id="searchEmployeeSheet"
         isOpened={open}
         onClose={() => setOpen(false)}
