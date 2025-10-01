@@ -1,6 +1,7 @@
 .sheetWrapper {
   border-radius: 0;
   height: 100dvh;
+  touch-action: manipulation;
 }
 .sheetHead {
   z-index: 3;
