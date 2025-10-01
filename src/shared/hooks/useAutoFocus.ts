@@ -9,7 +9,6 @@ export const useAutoFocus = ({ delay = 0, enabled = true } = {}) => {
     const focusElement = () => {
       if (inputRef.current) {
         inputRef.current.focus();
-        console.log("delay", delay);
       }
     };
 
