@@ -1,7 +1,6 @@
 .sheetWrapper {
   border-radius: 0;
   height: 100dvh;
-  font-size: 16px;
 }
 .sheetHead {
   z-index: 3;
@@ -16,6 +15,7 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid grey;
+  font-size: 16px;
 
   &:focus {
     outline: none;
