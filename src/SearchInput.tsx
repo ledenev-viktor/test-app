@@ -1,18 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useAutoFocus } from "./shared/hooks/useAutoFocus";
 import s from "./App.module.css";
 
 export const SearchInput = () => {
-  const inputRef = useRef<HTMLInputElement | null>(null);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (inputRef.current) {
-        inputRef.current.focus();
-      }
-    }, 200);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const inputRef = useAutoFocus({ delay: 200 });
 
   return (
     <input placeholder="Тестовый инпут" className={s.input} ref={inputRef} />
